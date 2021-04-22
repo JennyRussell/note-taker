@@ -1,17 +1,18 @@
 const express = require('express');
 const database = require('./db/db.json');
-const fs = require('fs');
+const note = require('./db/note');
+// const fs = require('fs').promises;
 const router = express.Router();
 
 
 // route to notes
+router.get('/notes', function(req, res) {
+    return note.allNotes().then(data => res.json(data))
+        // console.log(res);
 
-router.get('/api/notes', (req, res) => {
-    res.send(JSON.stringify(database));
-    res.header("Content-Type", 'application/json');
-})
+});
 
-router.post('/api/notes', (req, res) => {
+router.post('/notes', (req, res) => {
 
     const newNote = req.body;
 
