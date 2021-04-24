@@ -7,6 +7,7 @@ class Note {
     allNotes() {
         return this.read().then((notes) => {
             const parsedNotes = JSON.parse(notes).map(note => note)
+            console.log(parsedNotes);
             return parsedNotes;
         })
     }

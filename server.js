@@ -9,14 +9,14 @@ var PORT = process.env.PORT || 3000;
 // link to assets
 app.use(express.static('public'));
 
-// use /api
-app.use('/api', notes);
+
 
 // set express app to handle parsing of data
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 
-
+// use /api
+app.use('/api', notes);
 
 // link to html pages
 app.get('/', (req, res) => res.sendFile(path.join(__dirname, '/public/index.html')));
