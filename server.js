@@ -25,6 +25,6 @@ app.get('/notes', (req, res) => res.sendFile(path.join(__dirname, '/public/notes
 
 // listen to this port
 
-app.listen(3000, function() {
-    console.log(`Live on port ${3000}`);
+app.listen(PORT, function() {
+    console.log(`Live on port ${PORT}`);
 });
