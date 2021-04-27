@@ -9,3 +9,11 @@ This application is used to create node reminders. It can select old notes for r
 # Usage
 
 To use app on local storage 3000, run nodemon server or node server.js in terminal.
+
+# URL
+
+
+# License
+
+ MIT
+
