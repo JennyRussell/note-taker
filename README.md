@@ -4,7 +4,7 @@ Note Taker
 
 # Description
 
-This application is used to create node reminders. It can select old notes for review, post new notes, and delete notes using express routes and fs to read/write from/to file.
+This application is used to create note reminders. It can select old notes for review, post new notes, and delete notes using express routes and fs to read/write from/to file.
 
 # Installation
 
